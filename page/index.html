@@ -29,8 +29,8 @@
             pointer-events: none;
         }
         .title {
-            font-size: 70px;
-            font-weight: bold;
+            font-size: 50px;
+            /* font-weight: bold; */
             margin-top: 120px;
             font-family: Paperlogy-4Regular;
             margin-bottom:70px;
@@ -60,12 +60,12 @@
             display: block;
             width: fit-content;
             font-family: Pretendard-Regular;
-            color: #000;
             margin:0;
         }
         .link p {
             margin-top :0;
             margin-bottom:20px;
+            color: #000;
         }
         .link:last-of-type p {
             margin-bottom: 0;
@@ -73,12 +73,32 @@
         .link_menu{
             font-size: 25px;
         }
+        .link_menu:hover{
+            opacity:0.6;
+        }
         .link_news{
-            text-decoration: underline;
+            
+            margin-bottom:15px;
+            font-size:18px;
+            
+        }
+        .link_news:hover{
+            opacity:0.6;
+        }
+        .link_news p {
+            margin:0;
+            /* text-decoration: underline; */
             text-underline-position: under;
+            text-decoration-color: black;;
+            display:inline;
+        }
+        .link_news span{
+            font-size:16px;
+            color:#777;
+            margin-left:15px;
         }
         .link_box_color{
-            background:#fff;
+            background:#ccc;
             opacity: .5;
             position: absolute;
             width: 100%;
@@ -93,37 +113,50 @@
                 overflow-x: hidden;
             }
             .title {
-                font-size: 50px;
+                font-size: 30px;
                 margin-top:40px;
                 margin-bottom:35px
             }
             .link_box {
                 width:70vw;
             }
+            .link_box_title {
+                font-size: 18px;
+            }
             .link_menu{
-                font-size: 20px;
+                font-size: 19px;
+            }
+            .link_news p{
+                font-size:17px;
+            }
+            .link_news a {
+                font-size:15px;
             }
         }
     </style>
     <title>폭염 정보 알기</title>
 </head>
 <body>
-    <div class="background_img_box">
+    <!-- <div class="background_img_box">
         <img src="main_background.jpg" alt="" class="background_img">
-    </div>
-    <p class="title">폭염 정보 알기</p>
+    </div> -->
+    <p class="title">🔅 폭염 데이터 모음 🔅</p>
     <div class="link_box link_box_menu">
-        <p class="link_box_title">폭염 데이터</p>
+        <p class="link_box_title">폭염 통계</p>
         <a href="test.html" class="link link_menu"><p>폭염일수 분포도  →</p></a>
         <a href="graph.html" class="link link_menu"><p>폭염일수 그래프  →</p></a>
+        <div class="link_box_color"></div>
+    </div>
+    <div class="link_box link_box_news">
+        <p class="link_box_title">폭염 상식</p>
         <a href="method.html" class="link link_menu"><p>폭염 대응 방법  → </p></a>
         <div class="link_box_color"></div>
     </div>
     <div class="link_box link_box_news">
         <p class="link_box_title">폭염 뉴스</p>
-        <a href="https://n.news.naver.com/mnews/article/009/0005382441?sid=101" target='_blank' class="link link_news"><p>“폭염 직격탄 제주 농가 돕자”... 쿠팡, 제주감귤 800톤 매입</p></a>
-        <a href="https://n.news.naver.com/mnews/article/003/0012851980?sid=102" target='_blank' class="link link_news"><p>경기도 "올 여름 강화된 폭염·풍수해대책으로 피해 최소화"</p></a>
-        <a href="https://n.news.naver.com/mnews/article/025/0003394715?sid=102" target='_blank' class="link link_news"><p>올해 폭염에 온열질환 산재 신청 28건…작년보다 40%↑</p></a>
+        <a href="https://n.news.naver.com/mnews/article/009/0005382441?sid=101" target='_blank' class="link link_news"><p>“폭염 직격탄 제주 농가 돕자”... 쿠팡, 제주감귤 800톤 매입</p><span>2024.10.21.</span></a>
+        <a href="https://n.news.naver.com/mnews/article/003/0012851980?sid=102" target='_blank' class="link link_news"><p>경기도 "올 여름 강화된 폭염·풍수해대책으로 피해 최소화"</p><span>2024.10.21.</span></a>
+        <a href="https://n.news.naver.com/mnews/article/025/0003394715?sid=102" target='_blank' class="link link_news"><p>올해 폭염에 온열질환 산재 신청 28건…작년보다 40%↑</p><span>2024.10.21.</span></a>
         <div class="link_box_color"></div>
     </div>
 </body>
